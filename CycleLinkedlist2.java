@@ -7,8 +7,8 @@ public class CycleLinkedlist2{
           first = first.next.next;
           last = last.next;
           if(first==last){
-              ListNode ptr = head;
-              last = last.next;
+              ListNode ptr = head;//增设ptr
+              last = last.next;//last节点需要先往后移动一个距离
               while(ptr!=last){
                   ptr=ptr.next;
                   last=last.next;
